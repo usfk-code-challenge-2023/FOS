@@ -57,7 +57,7 @@ To run the FOS simulator on your browser:
   
 * Enter the address of the controller server to which the simulator will connect.
   
-  > The simulator operates using WebAssembly on your local machine, rather than on a remote server. Unless you are using a browser, you can connect to a locally hosted server (connector). The browser implementation primarily caters to individuals working on DoDIN computers. If you need to work within a browser, you can implement a local TCP server for the controller or use an external server to establish a connection.
+  > The simulator operates using WebAssembly on your local machine, rather than on a remote server. Even if you are targeting to run FOS simulator with your browser, you can connect to a locally hosted server(FOS Controller). The browser implementation primarily caters to individuals working on DoDIN computers. If you need to work within a browser, you can implement a local TCP server for the controller or use an external server to establish a connection.
 
 * After completing the simulation, remember to download your play log file from your browser.
 
