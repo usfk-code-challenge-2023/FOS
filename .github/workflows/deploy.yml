@@ -25,6 +25,7 @@ jobs:
         run: |
           cp README.md content
           jupyter lite build --contents content --output-dir dist
+          cp -f dist/index.html dist/lab.html
           cp -f index.html dist
           cp -f index.css dist
           cp -f main.py dist
