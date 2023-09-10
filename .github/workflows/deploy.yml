@@ -28,10 +28,8 @@ jobs:
           cp -f dist/index.html dist/lab.html
           cp -f dist/lab/index.html dist/lab/lab.html
           cp -f patch/config-utils.js dist/config-utils.js
-          cp -f index.html dist
-          cp -f index.css dist
-          cp -f main.py dist
-          cp -r res dist/res
+          cp -r -f *.html dist
+          cp -r -f *.py dist
           cp -r Docs dist/Docs
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
