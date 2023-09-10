@@ -112,10 +112,10 @@
                 }
                 pyodide.runPython(`
                     from js import prompt
-					import asyncio
+                    import asyncio
                     __builtins__.input = prompt
-					from src.test import webrtc_proto
-					asyncio.run(webrtc_proto.main())
+                    from src.test import webrtc_proto
+                    asyncio.run(webrtc_proto.main())
                 `);
             }
             main();
