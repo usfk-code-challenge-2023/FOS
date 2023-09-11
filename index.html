@@ -246,10 +246,10 @@
 		try {
 		  await micropip.install("/cdn/packages/xmltodict-0.13.0-py2.py3-none-any.whl");
 		  await micropip.install("/cdn/packages/wasmsockets-0.1.4-py3-none-any.whl");
-		  await micropip.install("/dist/fos_simulator-1.1.0.0-py3-none-any.whl");
+		  await micropip.install("/dist/fos_simulator-1.1.0.0-cp310-cp310-emscripten_3_1_27_wasm32.whl");
         } catch (error) {
           console.error(error);
-          await micropip.install("https://dooplns.github.io/releases/fos_controller-1.1.0.0-cp310-cp310-emscripten_3_1_27_wasm32.whl");
+          await micropip.install("https://dooplns.github.io/releases/fos_simulator-1.1.0.0-cp310-cp310-emscripten_3_1_27_wasm32.whl");
         }
         pyodide.runPython(`
           from js import prompt
