@@ -109,7 +109,7 @@
                 } catch (error) {
                     console.error(error);
                 }
-                pyodide.runPython(`
+                pyodide.runPythonAsync(`
                     from js import prompt
                     import asyncio
                     __builtins__.input = prompt
