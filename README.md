@@ -57,6 +57,10 @@ To run the FOS simulator on your browser:
   
 * Enter the address of the controller server to which the simulator will connect.
   
+  > [Avaliable also on NIPR] Example Websocket Controller Server: (host) port-0-fos-cu6q2blkog9b7j.sel4.cloudtype.app  (port) 443
+  
+  > [Not Avaliable on NIPR] Example WebRTC Controller: Open [WebRTC Controller Example](https://usfk-code-challenge-2023.github.io/FOS/rtc_controller.html) as well as FOS Simulator on your browser and when Simulator asks you about host name, then type 'rtc'.
+  
   > The simulator operates using WebAssembly on your local machine, rather than on a remote server. Even if you are targeting to run FOS simulator with your browser, you can connect to a locally hosted server(FOS Controller). The browser implementation primarily caters to individuals working on DoDIN computers. If you need to work within a browser, you can implement a local TCP server for the controller or use an external server to establish a connection.
 
 * After completing the simulation, remember to download your play log file from your browser.
@@ -65,10 +69,11 @@ To run the FOS simulator on your browser:
 * For more comprehensive information on how to use the simulator and for additional details, please visit https://usfk-code-challenge-2023.github.io/FOS/Docs.
 
 ### 2. Implementing FOS Controller
-* You can find a simple example of a controller at https://github.com/usfk-code-challenge-2023/FOS/blob/main/Docs/proto.ipynb.
+* You can use either native TCP socket, WebSocket, or WebRTC to connect with this simulator.
+* You can find a simple example of a controller at https://github.com/usfk-code-challenge-2023/FOS/blob/main/Docs/proto.ipynb (Native TCP Socket, Desktop) or https://github.com/usfk-code-challenge-2023/FOS/blob/main/Docs/proto(websocket).py (WebSocket, Browser or NodeJS)
 * Turning off the visualization option in the FOS Simulator can be beneficial for AI/ML learning iterations.
 
 ### 3. Bug Report
-* If you encounter any issues or bugs with the simulator, please contact SGT Mun, Chaeun, USFK J5 AI/ML Planning Assistant, Digital O-Plan, via email at chaeun.mun.fm@army.mil or submit an issue report at https://github.com/usfk-code-challenge-2023/FOS/issues.
+* If you encounter any issues or bugs with the simulator, please contact SGT Kang, Kevin, USFK J5 AI/ML Planning Assistant, Digital O-Plan, via email at eun.kang.fm@army.mil or submit an issue report at https://github.com/usfk-code-challenge-2023/FOS/issues.
 
 * Please make sure to regularly check the provided page for any additional simulator fixes that may have been implemented since the start of the competition.
