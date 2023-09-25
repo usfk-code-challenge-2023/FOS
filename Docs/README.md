@@ -85,9 +85,11 @@ ___
 /disconnect
 </pre>
 - If result code is 302, then please re-request to the /result. That means the current round is over or finished.
+
 <pre>** Server Side API **
 /disconnect
 </pre>
+
 ** Order XML Shape **
 - Order Cancellation is not supported. (yet) | Only overriding can be carried.
 ```xml

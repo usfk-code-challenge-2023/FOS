@@ -1,19 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>FOS Document</title>
+    <link rel="shortcut icon" href="/res/icon.ico">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- md-block -->
     <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+    <!-- github-markdown-light theme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown-light.css" integrity="sha512-n5zPz6LZB0QV1eraRj4OOxRbsV7a12eAGfFcrJ4bBFxxAwwYDp542z5M0w24tKPEhKk2QzjjIpR5hpOjJtGGoA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- prism code theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hi098123/prism-for-tistory/prism.css">
+    <!-- bootstrap -->
+    <link href="/cdn/bootstrap/5.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/cdn/bootstrap/5.3.1/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, pre, code, li, span {
+    font-family: 'NanumSquareNeo-Variable', 'SUITE-Regular', serif !important;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, li, span {
+    color: #fff;
+}
+
+body {
+    background: #5A6E8C;
+    padding: 8px;
+}
+
+pre {
+    font-weight: 600;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.md-container {
+    padding: 2px 30px 30px;
+    margin: 0 auto;
+    background: #50627C;
+    max-width: 998px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+    </style>
 </head>
 <body>
-    <div class="markdown-body">
-        <md-block src="./README.md">
-            <!-- README.md 로드 실패시 보이는 문구 -->
-            `README.md` was *not* found
-        </md-block>
+    <div class="col">
+        <div class="markdown-body md-container">
+            <md-block src="./README.md"></md-block>
+        </div>
     </div>
 </body>
 </html>
