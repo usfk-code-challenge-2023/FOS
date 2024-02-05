@@ -7,7 +7,7 @@ There are two methods for operating the FOS simulator: running on a `desktop` an
 ###### 1-1. `Runnign on your Desktop`
 > `!!Disclamer and Warning!!` Please note that downloading FOS binaries on DoDIN devices, such as NIPRNET Computers, is strictly prohibited. According to the Army IT User Agreement (AUP), downloading or running any executable files on government devices without proper authorization from the AO is not allowed.
 
-To run the FOS simulator on your desktop:
+To run the FOS simulator on your desktop.
 
 * Download the appropriate Binary/Executable FOS Simulator file for your operating system from the
 `Commercial`
